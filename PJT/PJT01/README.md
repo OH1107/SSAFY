@@ -35,12 +35,12 @@
 
 커뮤니티 서비스 개발을 위한 데이터 수집 단계로, 전체 데이터 중 필요한 데이터를 추출해 나가는 과정을 진행합니다. 아래 기술된 사항은 필수적으로 구현해야 하는 내용입니다.
 
-- [__A.__ 제공되는 영화 데이터의 주요내용 수집](https://lab.ssafy.com/tmdcjf103/pjt01#a-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
+- [__A.__ 제공되는 영화 데이터의 주요내용 수집](https://github.com/OH1107/SSAFY/tree/main/PJT/PJT01#a-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
 
-- [__B.__ 제공되는 영화 데이터의 주요내용 수정](https://lab.ssafy.com/tmdcjf103/pjt01#b-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
-- [__C.__ 다중 데이터 분석 및 수정](https://lab.ssafy.com/tmdcjf103/pjt01#c-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
-- [__D.__ 알고리즘을 통한 데이터 출력](https://lab.ssafy.com/tmdcjf103/pjt01#d-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%ED%86%B5%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EB%A0%A5)
-- [__E.__ 알고리즘을 통한 데이터 출력](https://lab.ssafy.com/tmdcjf103/pjt01#e-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%ED%86%B5%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EB%A0%A5)
+- [__B.__ 제공되는 영화 데이터의 주요내용 수정](https://github.com/OH1107/SSAFY/tree/main/PJT/PJT01#b-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
+- [__C.__ 다중 데이터 분석 및 수정](https://github.com/OH1107/SSAFY/tree/main/PJT/PJT01#c-%EC%A0%9C%EA%B3%B5%EB%90%98%EB%8A%94-%EC%98%81%ED%99%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%EC%A3%BC%EC%9A%94%EB%82%B4%EC%9A%A9-%EC%88%98%EC%A7%91)
+- [__D.__ 알고리즘을 통한 데이터 출력](https://github.com/OH1107/SSAFY/tree/main/PJT/PJT01#d-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%ED%86%B5%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EB%A0%A5)
+- [__E.__ 알고리즘을 통한 데이터 출력](https://github.com/OH1107/SSAFY/tree/main/PJT/PJT01#e-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%84-%ED%86%B5%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%9C%EB%A0%A5)
 
 
 
