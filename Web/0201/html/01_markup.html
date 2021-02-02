@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>학생 건강 설문</title>
+  <style>
+    form > div {
+      margin-top: 20px;
+    }
+
+    form > div > label:first-child {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,29 +23,42 @@
     <!-- 건강 설문 작성 form -->
     <form action="#">
       <div>
-        <label for="name">이름을 기재해주세요.</label><br>
-        <input type="text" id="name" autofocus>
+        <label for="name">이름을 기재해주세요.</label>
+        <input id="name" type="text" name="name" placeholder="내 답변" autofocus required>
       </div>
+
+      <!-- name과 id는 다름 -->
+      <!-- label에게 너는 이 친구를 바라봐야해 라고 명시하는 것이 id -->
+      <!-- 해당 데이터는 location에 대한 데이터야 라고 명시하는 것이 name -->
       <div>
-        <label for="region">지역을 선택해주세요.</label><br>
-        <select name="region" id="region">
-          <option value="서울" disabled>서울</option>
+        <label for="location">지역을 선택해주세요.</label>
+        <select name="location" id="location" required>
+          <!-- option의 값은 사람이 보는 text, value 값은 데이터 처리를 위한 값 -->
+          <option value="">선택</option>
+          <option value="서울">서울</option>
           <option value="대전">대전</option>
           <option value="광주">광주</option>
           <option value="구미">구미</option>
+          <option value="강원" disabled>강원</option>
         </select>
       </div>
+
       <div>
         <p>오늘의 체온을 선택해주세요.</p>
-        <input type="radio" id="normal" name="body-heat" value="normal" checked>
+        <!-- radio 경우 label이 각각 붙어야 함 -->
+        <input type="radio" id="normal" name="body-heat" value="normal" checked required>
         <label for="normal">37.5도 미만</label>
-        <input type="radio" id="warning" name="body-heat" value="warning">
+
+        <input type="radio" id="warning" name="body-heat" value="warning" required>
         <label for="warning">37.5도 이상</label>
       </div>
+
       <input type="submit" value="전송!!">
+      <!-- 값을 입력하고 제출을 누르면 -->
+      <!-- 01_markup.html?name=오승철&location=대전&body-heat=normal# -->
     </form>
   </section>
-
+  
   <footer>
     <!-- footer 내용 -->
   </footer>
