@@ -1,0 +1,8 @@
+/* 아래에 코드를 작성하시오. */
+footer a.sns-logo > img {
+  height: 30px;
+}
+
+footer a.sns-logo + a.sns-logo {
+  margin-left: 2rem;
+}
