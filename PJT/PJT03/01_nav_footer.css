@@ -1,0 +1,13 @@
+/* 01_nav_footer.css */
+/* 아래에 코드를 작성해 주세요. */
+.logo {
+  width: 200px;
+}
+
+body {
+  height: 3000px;
+}
+
+div > ul a:active { 
+  font-weight: bold; 
+}
