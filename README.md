@@ -9,7 +9,7 @@ Samsung Software Academy For Youth
 - __Python__
   - 01
     - 기초문법, 변수, 데이터 타입, 연산자
-    - sequence/Non-sequence 컨테이너, immutable/mutable 데이터, 제어문(조건문, 반복문)
+    - `sequence/Non-sequence` 컨테이너, `immutable/mutable` 데이터, 제어문(조건문, 반복문)
 - __HTML & CSS__
 - __APS (Algorithm Programming Solving)__
   - 교육 전반 코드 기록 :arrow_right: `.\Algorithm\*.py` 정리
