@@ -9,5 +9,6 @@ Samsung Software Academy For Youth
 - __Python__
 - __HTML & CSS__
 - __APS (Algorithm Programming Solving)__
+  - 교육 전반 코드 기록 :arrow_right: .\Algorithm\*.py 정리
   - 주요 알고리즘 개념 :arrow_right: Tistory 블로그 정리
-  - SW Expert Acaedmy 문제 풀이 :arrow_right: \SWEA\*.md 정리
+  - SW Expert Acaedmy 문제 풀이 :arrow_right: .\SWEA\*.md 정리
