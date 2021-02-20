@@ -16,10 +16,9 @@ Samsung Software Academy For Youth
     - 객체, 클래스, 인스턴스, 속성, 메서드
 - __HTML & CSS__
   - HTML & CSS
-  - `Selector`
+    - `box model` , `float` , `flexbox` , `bootstrap` , `grid` , `position`
 - __APS (Algorithm Programming Solving)__
   - 교육 전반 코드 기록 :arrow_right: `.\Algorithm\*.py` 정리
-  - 주요 알고리즘 개념 :arrow_right: Tistory 블로그 정리
-    - `List (Bubble sort , Counting sort)`
-    - `Greedy Algorithm (탐욕 알고리즘)` ,`Exhaustive Search (완전 검색)`
+  - 주요 알고리즘 개념 :arrow_right: Tistory 블로그 정리 ([Tistory 블로그](https://5-ssssseung.tistory.com/))
+    - `List` , `List2` , `String`
   - SW Expert Acaedmy 문제 풀이 :arrow_right: `.\SWEA\*.md` 정리
