@@ -18,10 +18,10 @@ arr_2 = [4, 7, 9, 11, 19, 23]
 
 def sequentialSearch2(_list, key):
     for i in range(len(_list)):
-        if key == arr[i]:
+        if key == arr_2[i]:
             return i
             break
-        elif key < arr[i]:
+        elif key < arr_2[i]:
             return f"{i+1}번째 원소까지 검색했지만 없음", False
             break
 
