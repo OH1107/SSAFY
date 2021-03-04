@@ -14,9 +14,6 @@ def BFS(G, v):          # 그래프 G, 탐색 시작점 v
                 queue.append(i) # 큐에 넣기
 
 
-
-## 정리필요합니다 여기 
-
 # 완전그래프와 같이 간선이 많이 연결된 그래프일 경우
 # 불필요한 계산을 막기위해서 다음과 같은 코드로 수정
 
@@ -32,9 +29,9 @@ def BFS(G, v):
         for i in range(size):   # 같은 거리인 정점들끼리 묶어서
             tmp = queue.pop(0)  # 필요 행동을 취할 수 있다.
 
-        t = queue.pop(0)    # 기존에는 방문 여부를 여기서 확인했음
-        visit(t)            # 여기서 필요 행동만 취하고 방문 여부 확인은        
-        for i in G[t]:
-            if not visited[i]:
-                queue.append(i)
-                visited[i] = True   # 방문 대상인 정점에 대해서 True로 미리 바꿔줌
+            # 기존에는 방문 여부를 여기서 확인했음
+            visit(t)            # 여기서 필요 행동만 취하고 방문 여부 확인은        
+            for i in G[t]:
+                if not visited[i]:
+                    queue.append(i)
+                    visited[i] = True   # 방문 대상인 정점에 대해서 True로 미리 바꿔줌
