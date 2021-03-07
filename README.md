@@ -22,4 +22,4 @@ Samsung Software Academy For Youth
   - 주요 알고리즘 개념 :arrow_right: Tistory 블로그 정리 ([Tistory 블로그](https://5-ssssseung.tistory.com/))
     - `List` , `List2` , `String`
   - SW Expert Acaedmy 문제 풀이 :arrow_right: `.\SWEA\*.md` 정리
-.
+
