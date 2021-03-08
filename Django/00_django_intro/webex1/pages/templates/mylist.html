@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block container %}
+  <ol>
+    {% for student in students %}
+      <li>{{ student }}</li>
+    {% endfor %}
+  </ol>
+{% endblock container %}
