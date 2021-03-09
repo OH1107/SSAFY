@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block container %}
+
+<h1>Fake Google</h1>
+
+<form action="https://www.google.com/search" method='GET' target='_blank'>
+  <label for="q">검색 : </label>
+  <input type="text" name='q' id='q' required>
+  <button>검색</button>
+</form>
+
+{% endblock container %}
