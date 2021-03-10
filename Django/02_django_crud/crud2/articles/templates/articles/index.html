@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Article Index</h1>
+
+  <a href="{% url 'articles:new' %}">[New]</a>
+
+  {% for article in articles %}
+    <div>
+      <p>{{ article.pk }}. {{ article.title }}</p>
+      <p>{{ article.content }}</p>
+      <hr>
+    </div>
+  
+  {% empty %}
+    <p>아직 등록된 게시글이 없어요.</p>
+
+  {% endfor %}
+  
+{% endblock content %}
