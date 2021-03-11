@@ -9,6 +9,7 @@
     <div>
       <p>{{ article.pk }}. {{ article.title }}</p>
       <p>{{ article.content }}</p>
+      <a href="{% url 'articles:detail' article.pk %}">DETAIL</a>
       <hr>
     </div>
   
