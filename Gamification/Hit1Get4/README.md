@@ -1,13 +1,10 @@
-## 일타싸피
+# 일타싸피 (Hit1Get4)
 
-  * 다운로드 진행 기간: 2021.03.12 ~ 2021.03.15
-  * 대회 정보: https://project.ssafy.com/play
-
-
-
-팀 ID : PT00002258
-
-팀 key : SIGD-MHDH-CRDH-RBTN
+> 일종의 SSAFY 평가
+>
+> 시험 방식이 아닌, 게임 플레이 기법(**Gamification**)을 적용
+>
+> 당구 포켓볼을 간소화한 게임을 다양한 알고리즘으로 구현
 
 
 
