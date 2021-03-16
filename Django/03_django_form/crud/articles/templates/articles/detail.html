@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h1>Detail</h1>
+<a href="{% url 'articles:index' %}">[INDEX]</a>
+
+<p>No. {{ article.pk }}</p>
+<h2>제목 : {{ article.title }}</h2>
+<p>작성일자 : {{ article.created_at }}</p>
+<hr>
+<p>내용 : {{ article.content }}</p>
+
+<a href="{% url 'articles:update' article.pk %}">수정하기</a>
+{% endblock container %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h1>New</h1>
+<a href="{% url 'articles:index' %}">[INDEX]</a>
+
+<form method='post'>
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button>생성</button>
+</form>
+
+{% endblock container %}

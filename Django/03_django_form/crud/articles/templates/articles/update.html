@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h1>Edit</h1>
+<a href="{% url 'articles:index' %}">[INDEX]</a>
+
+<form method='post'>
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button>수정</button>
+</form>
+
+{% endblock container %}
