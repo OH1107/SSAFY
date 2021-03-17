@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.http import require_safe, require_http_methods, require_POST
 from .models import Article
 from .forms import ArticleForm
 
 # Create your views here.
+@require_safe
 def index(request):
     # 모든 게시글을 조회
 
@@ -18,6 +20,7 @@ def index(request):
 
 
 # 하나의 view 함수가 request의 method에 따라서 2가지 역할을 하게 됨
+@require_http_methods(['GET', 'POST'])
 def create(request):
     # POST일 때
     if request.method == 'POST':
@@ -25,7 +28,7 @@ def create(request):
         if form.is_valid():
             article = form.save()
             return redirect('articles:detail', article.pk)
-    # POST가 아닌 다른 method일 때
+    # GET일 때
     else:
         form = ArticleForm()
     context = {
@@ -37,6 +40,7 @@ def create(request):
     return render(request, 'articles/create.html', context)
 
 
+@require_safe
 def detail(request, pk):
     # 몇번 글을 조회할건지 가져와야 함
     article = Article.objects.get(pk=pk)
@@ -46,16 +50,17 @@ def detail(request, pk):
     return render(request, 'articles/detail.html', context)
 
 
+@require_POST
 def delete(request, pk):
     # 삭제할 게시글 조회
     article = Article.objects.get(pk=pk)
     # 삭제 요청이 POST면 삭제, POST가 아니라면 DETAIL 페이지로 redirect
-    if request.method == 'POST':
-        article.delete()
-        return redirect('articles:index')
-    return redirect('articles:detail', article.pk)
+    article.delete()
+    return redirect('articles:index')
 
 
+
+@require_http_methods(['GET', 'POST'])
 def update(request, pk):
     article = Article.objects.get(pk=pk)
     # update

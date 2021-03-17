@@ -23,7 +23,7 @@ class ArticleForm(forms.ModelForm):
         label='제목',
         widget=forms.TextInput(
             attrs={
-                'class': 'my-title',
+                'class': 'my-title form-control',
                 'placeholder': 'Enter the Title',
                 'maxlength': 10,
             }
@@ -33,7 +33,7 @@ class ArticleForm(forms.ModelForm):
         label='내용',
         widget=forms.Textarea(
             attrs={
-                'class': 'my-content',
+                'class': 'my-content form-control',
                 'placeholder': 'Enter the Content',
                 'rows': 5,
                 'cols': 30,
@@ -44,9 +44,11 @@ class ArticleForm(forms.ModelForm):
         }
     )
 
-
     class Meta:
         model = Article
         fields = '__all__'
         # exclude = ('title',)
+        
+
+
 
