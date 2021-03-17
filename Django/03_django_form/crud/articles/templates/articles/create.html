@@ -1,14 +1,64 @@
 {% extends 'base.html' %}
 
 {% block container %}
-<h1>New</h1>
-<a href="{% url 'articles:index' %}">[INDEX]</a>
+  <h1>New</h1>
+  <a href="{% url 'articles:index' %}">[INDEX]</a>
 
-<form method='post'>
-  {% csrf_token %}
-  {{ form.as_p }}
+  <form method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
 
-  <button>생성</button>
-</form>
+    <button>생성</button>
+  </form>
 
+  <hr>
+
+  <form method='post'>
+    {% csrf_token %}
+    <div>
+      {{ form.title.errors }}
+      {{ form.title.label_tag }}
+      {{ form.title }}
+    </div>
+
+    <div>
+      {{ form.content.errors }}
+      {{ form.content.label_tag }}
+      {{ form.content }}
+    </div>
+  </form>
+
+  <hr>
+
+  <form method='post'>
+    {% csrf_token %}
+      {% for field in form %}
+        <div>
+          {{ field.errors }}
+          {{ field.label_tag }}
+          {{ field }}
+        </div>
+      {% endfor %}
+    <button>생성</button>
+  </form>
+
+  <hr>
+
+  <form method='post'>
+    {% csrf_token %}
+      {% for field in form %}
+        <div>
+          {% if field.errors %}
+            {% for error in field.errors %}
+                <div class="alert alert-warning" role="alert"><strong>{{ error|escape }}</strong></div>
+            {% endfor %}
+          {% endif %}
+          {{ field.label_tag }}
+          {{ field }}
+        </div>
+      {% endfor %}
+    <button>생성</button>
+  </form>
+
+  <hr>
 {% endblock container %}

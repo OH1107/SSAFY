@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.decorators.http import require_GET, require_http_methods
+from django.views.decorators.http import require_GET, require_http_methods, require_POST
 from .models import Article
 from .forms import ArticleForm
 
@@ -51,6 +51,7 @@ def create(request):
     }
     return render(request, 'articles/create.html', context)
 
+
 @require_GET
 def detail(request, pk):
     article = get_object_or_404(Article, pk=pk)
@@ -79,7 +80,13 @@ def detail(request, pk):
 #         article = form.save()
 
 #     return redirect('articles:detail', article.pk)
-    
+
+
+@require_POST
+def delete(request, pk):
+    pass
+
+
 @require_http_methods(['GET', 'POST'])
 def update(request, pk):
     article = get_object_or_404(Article, pk=pk)

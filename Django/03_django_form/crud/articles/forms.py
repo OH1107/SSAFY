@@ -12,7 +12,7 @@ class ArticleForm(forms.ModelForm):
         label='제목',
         widget=forms.TextInput(
             attrs={
-                'class': 'my-title',
+                'class': 'my-title form-control',
                 'placeholder': 'Enter Title',
                 'maxlength': 20,
             }
@@ -23,7 +23,7 @@ class ArticleForm(forms.ModelForm):
         label='내용',
         widget=forms.Textarea(
             attrs={
-                'class': 'my-content',
+                'class': 'my-content form-control',
                 'placeholder': 'Enter Content',
                 'rows': 5,
                 'cols': 50,
@@ -33,7 +33,7 @@ class ArticleForm(forms.ModelForm):
             'required': 'Please enter your content',
         }
     )
-    # content
+
 
     class Meta:
         model = Article
