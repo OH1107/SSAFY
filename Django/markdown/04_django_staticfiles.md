@@ -324,7 +324,7 @@ input 태그 - `accept` 속성
 
 **MEDIA_URL 확인해보기**
 
-![2](04_django_staticfiles.assets/2.jpg)
+![image-20210318204948622](04_django_staticfiles.assets/image-20210318204948622.png)
 
 <br>
 

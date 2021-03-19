@@ -23,3 +23,4 @@ Samsung Software Academy For Youth
     - `List` , `List2` , `String`
   - SW Expert Acaedmy 문제 풀이 :arrow_right: `.\SWEA\*.md` 정리
 
+- **Django**
