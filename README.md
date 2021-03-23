@@ -3,7 +3,7 @@
 Samsung Software Academy For Youth  
 
 ## 교육 소개
-![image](https://user-images.githubusercontent.com/67505208/112118152-6c9bc000-8bff-11eb-9c16-3875de3c5c02.png)
+<img src="https://img.kr.news.samsung.com/kr/wp-content/uploads/2020/10/201007-poster_5t-final-m.png" alt="SSAFY 5th">
 
 ### 교육 내용
 - __Python__
