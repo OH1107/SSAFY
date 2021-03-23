@@ -1,4 +1,4 @@
-# SSAFY
+# SSAFY <img src="http://edu.ssafy.com/asset/images/header-logo.jpg" alt="logo" width="16px">
 > 삼성 SW 아카데미  
 Samsung Software Academy For Youth  
 
