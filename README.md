@@ -10,7 +10,7 @@ Samsung Software Academy For Youth
 - 2021.01.15 ~ 2021.12 (1년)
 
 ### 교육 내용
-- __Python__
+- [__Python__](https://github.com/OH1107/SSAFY/tree/main/Python)
 
 
 - __HTML & CSS__
