@@ -103,7 +103,7 @@ urlpatterns = [
 
   > `AuthenticationForm` 은 왜 첫번째 인자가 request 인가? 
 > ModelForm이 아닌 Form 이기 때문.
-  
+
   ```python
   # accounts/views.py
   
@@ -124,8 +124,8 @@ urlpatterns = [
           'form': form,
       }
       return render(request, 'accounts/login.html', context)
-```
-  
+  ```
+
 - login 함수 이름을 `auth_login` 으로 변경해서 사용하는 이유는 view 함수인 login 과의 충돌을 방지하기 위함이다.
   
   ```django
@@ -141,7 +141,8 @@ urlpatterns = [
     <input type="submit">
   </form>
   {% endblock %}
-```
+  ```
+
   
   - 로그인 후 브라우저와 DB에서 세션 확인
 
@@ -163,6 +164,7 @@ urlpatterns = [
   </body>
   </html>
   ```
+
 
 <br>
 
@@ -191,7 +193,6 @@ urlpatterns = [
   
   path('logout/', views.logout, name='logout'),
   ```
-
   ```python
   # accounts/views.py
   
