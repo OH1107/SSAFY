@@ -10,6 +10,9 @@ Samsung Software Academy For Youth
 - 2021.01.15 ~ 2021.12 (1년)
 
 ### 교육 내용
+
+교육 내용의 중요 개념과 실습한 것을 정리하였습니다.
+
 - [__Python__](https://github.com/OH1107/SSAFY/tree/main/Python)
 
 
