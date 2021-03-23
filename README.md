@@ -11,15 +11,15 @@ Samsung Software Academy For Youth
 
 ### 교육 내용
 
-교육 내용의 중요 개념과 실습한 것을 정리하였습니다.
+📝 교육 내용의 중요 개념과 실습한 것을 정리하였습니다.
 
 - [__Python__](https://github.com/OH1107/SSAFY/tree/main/Python)
 
 
-- __HTML & CSS__
+- [__Web__](https://github.com/OH1107/SSAFY/tree/main/Web)
 
 
-- __APS (Algorithm Programming Solving)__
+- [__APS (Algorithm Programming Solving)__](https://github.com/OH1107/SSAFY/tree/main/Algorithm)
 
 
-- **Django**
+- [**Django**](https://github.com/OH1107/SSAFY/tree/main/Django)
