@@ -24,4 +24,4 @@ Samsung Software Academy For Youth
 
 - [**Django**](https://github.com/OH1107/SSAFY/tree/main/Django)
 
-  - ➕ 개념 위주로 복습하며 정리한 블로그 입니다. [티스토리 블로그](https://5-ssssseung.tistory.com/) 
+  ➕ 개념 위주로 복습하며 정리한 [티스토리 블로그](https://5-ssssseung.tistory.com/)  입니다. 
