@@ -11,7 +11,7 @@ Samsung Software Academy For Youth
 
 ### 교육 내용
 
-📝 교육 중 중요 개념과 실습한 것을 정리하였습니다.
+📝 교육 중 중요 개념과 실습한 것을 해당 리포지토리에 폴더별로 정리하였습니다.
 
 - [__Python__](https://github.com/OH1107/SSAFY/tree/main/Python)
 
