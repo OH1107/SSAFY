@@ -5,6 +5,7 @@ Samsung Software Academy For Youth
 ## 교육 소개
 
 <img src="https://img.kr.news.samsung.com/kr/wp-content/uploads/2020/10/201007-poster_5t-final-m.png" alt="SSAFY 5th" width="30%">
+
 ![image](https://user-images.githubusercontent.com/67505208/112417232-70982100-8d6a-11eb-973d-98b17ef7807d.png)
 
 ### 교육기간
