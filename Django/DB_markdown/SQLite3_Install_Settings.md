@@ -16,29 +16,29 @@ https://www.sqlite.org/download.html
 
 > 파일명 마지막 8자리는 다를 수 있음
 
-![img](sqlite3 설치.assets/02.png)
+![img](sqlite3.assets/02.png)
 
 
 
 ### 3. C드라이브 - `sqlite` 폴더생성 후 압축풀기
 
-![img](sqlite3 설치.assets/03.png)
+![img](sqlite3.assets/03.png)
 
 
 
 ### 4. 시작 - 시스템 환경 변수 편집 - 환경 변수
 
-![img](sqlite3 설치.assets/04.png)
+![img](sqlite3.assets/04.png)
 
-![img](sqlite3 설치.assets/05.png)
+![img](sqlite3.assets/05.png)
 
 
 
 ### 5. 시스템 변수 path - 편집 - `C:￦sqlite` 등록 - 확인
 
-![img](sqlite3 설치.assets/06.png)
+![img](sqlite3.assets/06.png)
 
-![img](sqlite3 설치.assets/07.png)
+![img](sqlite3.assets/07.png)
 
 
 
@@ -50,7 +50,7 @@ https://www.sqlite.org/download.html
   $ winpty sqlite3
   ```
 
-  ![image-20210325204137585](sqlite3 설치.assets/image-20210325204137585.png)
+  ![image-20210325204137585](sqlite3.assets/image-20210325204137585.png)
   
   
 
@@ -70,13 +70,13 @@ https://www.sqlite.org/download.html
   alias sqlite3="winpty sqlite3"
   ```
 
-  ![image-20210325205120201](sqlite3 설치.assets/image-20210325205120201.png)
+  ![image-20210325205120201](sqlite3.assets/image-20210325205120201.png)
 
   
 
 - vi 편집기 종료를 위해 `esc` 키를 누르고 `:wq` 입력하여 저장 종료
 
-  ![image-20210325205204912](sqlite3 설치.assets/image-20210325205204912.png)
+  ![image-20210325205204912](sqlite3.assets/image-20210325205204912.png)
 
   
 
@@ -86,7 +86,7 @@ https://www.sqlite.org/download.html
   sqlite3
   ```
 
-  ![image-20210325204946598](sqlite3 설치.assets/image-20210325204946598.png)
+  ![image-20210325204946598](sqlite3.assets/image-20210325204946598.png)
 
   
 
