@@ -6,7 +6,7 @@ Samsung Software Academy For Youth
 
 ![image](https://user-images.githubusercontent.com/67505208/112417232-70982100-8d6a-11eb-973d-98b17ef7807d.png)
 
-- [SSAFY 홈페이지](https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp)
+- SSAFY에 대한 보다 자세한 소개는 [SSAFY 홈페이지](https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp)에서 확인할 수 있습니다.
 
 
 ### 교육기간
