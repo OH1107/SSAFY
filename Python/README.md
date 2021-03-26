@@ -1,5 +1,7 @@
 # :computer: Python/
 
+> 폴더별 키워드 정보
+
 ## 01/
 
 ### 00_intro
