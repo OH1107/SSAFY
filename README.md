@@ -22,7 +22,7 @@ Samsung Software Academy For Youth
 - [__Web__](https://github.com/OH1107/SSAFY/tree/main/Web)
 
 
-- [__APS (Algorithm Programming Solving)__](https://github.com/OH1107/SSAFY/tree/main/Algorithm)
+- [__APS (Algorithm Programming Solving) 기본__](https://github.com/OH1107/SSAFY/tree/main/Algorithm)
 
 
 - [**Django**](https://github.com/OH1107/SSAFY/tree/main/Django)
