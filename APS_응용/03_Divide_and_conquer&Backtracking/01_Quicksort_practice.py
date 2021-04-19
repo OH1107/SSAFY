@@ -1,3 +1,5 @@
+# 배열의 데이터를 퀵 정렬하는 함수를 작성하고 테스트 해보시오.
+
 def qsort(a, low, high):
     if low < high:
         pivot = partition(a,low,high)
