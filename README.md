@@ -32,4 +32,4 @@ Samsung Software Academy For Youth
 
   ➕ 개념 위주로 복습하며 정리한 [티스토리 블로그](https://5-ssssseung.tistory.com/)  입니다. 
   
-- [__JavaScript__](https://github.com/OH1107/SSAFY/tree/main/APS_%EC%9D%91%EC%9A%A9)
+- [__JavaScript__]()
