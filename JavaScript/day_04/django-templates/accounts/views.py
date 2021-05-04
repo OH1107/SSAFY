@@ -123,15 +123,16 @@ def follow(request, user_pk):
             # if request.user in person.followers.all():
                 # 팔로우 끊음
                 you.followers.remove(me)
-                followed = False
+                is_following = False
             else:
                 # 팔로우 신청
                 you.followers.add(me)
-                followed = True
+                is_following = True
 
             response_data = {
-                'followed': followed,
-                'count': you.followers.count(),
+                'is_following': is_following,
+                'followers_count': you.followers.count(),
+                'followings_count': you.followings.count(),
             }
         return JsonResponse(response_data)
     return HttpResponse(status=401)

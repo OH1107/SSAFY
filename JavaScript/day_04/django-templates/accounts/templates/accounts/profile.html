@@ -6,14 +6,14 @@
 {% with followings=person.followings.all followers=person.followers.all %}
   <div>
     <div>
-      팔로잉 : {{ followings|length }} / 팔로워 : 
-      <span id="follow-cnt-{{ person.pk }}">{{ followers|length }}</span>
+      팔로잉 : <span id="followings-count">{{ followings|length }}</span> / 
+      팔로워 : <span id="followers-count">{{ followers|length }}</span>
     </div>
     {% if request.user != person %}
       <div>
         <form class="follow-form" data-user-id="{{ person.pk }}">
           {% csrf_token %}
-          <button id="follow-btn-{{ person.pk }}">
+          <button id="follow-btn">
             {% if request.user in followers %}
               언팔로우
             {% else %}
@@ -61,18 +61,20 @@
     const userId = event.target.dataset.userId
     // console.log(userId)
     axios({
-      url: `/accounts/${userId}/follow/`,
+      url: '/accounts/{{ person.pk }}/follow/',
       method: 'post',
       headers: {
         'x-CSRFToken': csrfToken,
       },
     }).then((response) => {
-      const { followed, count } = response.data
-      const followBtn = document.querySelector(`#follow-btn-${userId}`)
-      followBtn.innerText = followed ? '언팔로우' : '팔로우'
+      const { is_following, followers_count, followings_count } = response.data
+      const followBtn = document.querySelector('#follow-btn')
+      followBtn.innerText = is_following ? '언팔로우' : '팔로우'
 
-      const followCnt = document.querySelector(`#follow-cnt-${userId}`)
-      followCnt.innerText = count
+      const followersCnt = document.querySelector('#followers-count')
+      const followingsCnt = document.querySelector('#followings-count')
+      followersCnt.innerText = followers_count
+      followingsCnt.innnerText = followings_count
     }).catch((error) => {
       switch (error.response.status) {
         case 401: {
@@ -84,8 +86,6 @@
         }
       }
     })
-
   })
-
 </script>
 {% endblock %}
