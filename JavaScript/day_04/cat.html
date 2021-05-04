@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="" alt="cat">
+  <button>고영희씨</button>
+
+  <!-- Axios CDN 호출 -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const API_URI = 'https://api.thecatapi.com/v1/images/search'
+
+    const getCat = function () {
+      // Axios로 API 요청을 보낸다.
+      axios.get(API_URI)
+
+      // 응답이 오면 사진 URL을 data에서 꺼낸 뒤,
+      .then( ({ data }) => {
+        // img 태그의 src 속성으로 할당한다.
+        const myImg = document.querySelector('img')
+        const ImgUrl = data[0].url
+        myImg.setAttribute('src', ImgUrl)
+      })
+    }
+
+    const myButton = document.querySelector('button')
+    myButton.addEventListener('click' , getCat)
+  </script>
+  
+</body>
+</html>
