@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <button @click="getDog">강아지 내놔</button>
+    <img v-show="imgSource" v-bind:src="imgSource" alt="dog">
+  </div>
+
+  <!-- Axios & Vue CDN 삽입 -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        imgSource: '',
+      },
+      methods: {
+        getDog: function () {
+          // this === Vue이여야 함
+          const API_URI = 'https://dog.ceo/api/breeds/image/random'
+          axios.get(API_URI) // => promise.then
+
+            // function 키워드
+            // this는 실행 컨텍스트를 가르킨다.
+            // 그래서, home.call() 김재석, call() 유재석
+
+            // arrow 함수, (Lexical Scope)
+            // 작성되는 함수의 this를 따라간다.
+            .then((response) => {
+              // 여기서 funtion 키워드를 쓰면
+              // 현재는 콜백함수이기 때문에
+              // this === window가 되어버림
+              // 그래서 arrow function을 써야함
+              this.imgSource = response.data.message
+            })
+        }
+      }
+    })
+  </script>
+</body>
+</html>
