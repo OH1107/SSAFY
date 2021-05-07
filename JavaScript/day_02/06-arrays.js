@@ -6,10 +6,15 @@
 
 const homeworks = ['david.zip', null, 'maria.zip', 'tom.zip', null]
 
-const result = homeworks.filter((item) => {
-	return item
-})
-console.log(result)
+const results = []
+
+for (const homework of homeworks) {
+	if (homework) {
+		results.push(homework)
+	}
+}
+
+console.log(results)
 
 
 /*
@@ -25,7 +30,15 @@ const arr1 = ['www', 'samsung', 'com']
 const arr2 = ['galaxy', 'buds', 'pro']
 const arr3 = ['sec', 'buds']
 
-const result = arr1.join('.') + '/' + arr3.join('/') + '/' + arr2.join('-')
+
+const homepage = arr1.join('.')
+const product = arr2.join('-')
+
+arr3.unshift(homepage)
+arr3.push(product)
+
+const result = arr3.join('/')
+
 console.log(result)
 
 
@@ -39,6 +52,7 @@ console.log(result)
 const weather = ['sunny', 'sunny', 'sunny', 'sunny', 'rainy', 'rainy', 'sunny']
 
 while (weather.indexOf('rainy') > 0) {
-	const idx = weather.indexOf('rainy')
-	weather[idx] = 'sunny'
+	weather[weather.indexOf('rainy')] = 'sunny'
 }
+
+console.log(weather)

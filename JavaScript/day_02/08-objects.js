@@ -19,6 +19,9 @@ const data = {
 }
 
 const result = data.items[0].name
+console.log(result) // 'foo'
+
+
 
 /*
 [Object 축약 문법]
@@ -29,10 +32,21 @@ const result = data.items[0].name
 const username = 'hailey'
 const contact = '010-1234-5678'
 
-const result = {
+// ES5
+const user = {
+  username: username,
+  contact: contact,
+}
+
+// ES6+
+const user = {
   username,
   contact,
 }
+
+console.log(user)
+
+
 
 /*
 [Object Destructuring]
@@ -59,9 +73,26 @@ function saveUserData (users) {
   return userData
 }
 
+// 해설 1
+function newSaveUserData (users) {
+  return users.map(({ name, contact }, index) => ({
+    id: index,
+    name,
+    contact,
+  }))
+}
 
-function saveUserData (users) {
+console.log(newSaveUserData(users))
+
+// 해설 2
+function newSaveUserData (users) {
   return users.map(({ name, contact }, index) => {
-    return { id: index, name, contact }
+    return {
+      id: index,
+      name,
+      contact
+    }
   })
 }
+
+console.log(newSaveUserData(users))

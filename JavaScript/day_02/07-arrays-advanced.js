@@ -10,10 +10,18 @@ const trips = [
   { distance: 59, time: 25 },
 ]
 
+const speeds = trips.map(function (trip) {
+  return trip.distance / trip.time
+})
+
 const speeds = trips.map((trip) => {
   return trip.distance / trip.time
 })
+
+const speeds = trips.map(trip => trip.distance / trip.time)
+
 console.log(speeds)
+
 
 /*
  [배열 관련 주요 메서드 연습 심화 2]
@@ -27,8 +35,8 @@ const query = 'java'
 const result = languages.filter((language) => {
   return language.includes(query)
 })
-console.log(result)
 
+console.log(result)
 
 /*
  [배열 관련 주요 메서드 연습 심화 3]
@@ -47,10 +55,19 @@ const scores = [
   { name: 'anna', score: 85 },
 ]
 
-scores.reduce((acc, item) => {
-  acc[item.name] = item.score
+// 해설 - forEach
+const result = {}
+scores.forEach(function (score) {
+  result[score.name] = score.score
+})
+console.log(result)
+
+// 해설 - reduce
+const result = scores.reduce((acc, score) => {
+  acc[score.name] = score.score
   return acc
 }, {})
+console.log(result)
 
 
 /*
@@ -65,9 +82,13 @@ const accounts = [
 	{ name: 'jason', balance: 24000 },
 ]
 
-accounts.find((item) => {
-  return item.balance === 24000
+const result = accounts.find((account) => {
+  return account.balance === 24000
 })
+
+console.log(result)
+
+
 
 
 /*
@@ -82,9 +103,11 @@ const requests = [
   { url: '/users', status: 'failed' },
 ]
 
-requests.some((item) => {
-  return item.status === 'pending'
+const isPending = requests.some((request) => {
+  return request.status === 'pending'
 })
+
+console.log(isPending)
 
 
 /*
@@ -99,6 +122,8 @@ const users = [
   { name: 'Tony', submitted: false },
 ]
 
-users.every((item) => {
-  return item.submitted === true
+const isSubmmited = users.every((user) => {
+  return user.submitted
 })
+
+console.log(isSubmmited)

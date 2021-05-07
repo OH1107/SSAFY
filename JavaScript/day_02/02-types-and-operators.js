@@ -6,11 +6,10 @@
   - curTime 변수에 hour와 minute의 합을 저장 후 출력해보세요.
 */
 
-const today = new Date()
-const hour = today.getHours() * 3600
-const min = today.getMinutes() * 60
-const curTime = hour + min
-console.log(curTime)    // 51480
+const hour = 2 * 60 * 60
+const minute = 30 * 60
+const curTime = hour + minute
+console.log(curTime) 
 
 
 /*
@@ -18,12 +17,13 @@ console.log(curTime)    // 51480
 
   - username 변수에 여러분의 이름을 입력하세요.
   - message 변수에 인사말을 작성하세요.
-  - username 변수에 message을 할당 연산자로 이어붙인 후 출력해보세요. 
+  - username 변수에 greeting을 할당 연산자로 이어붙인 후 출력해보세요. 
 */
 
-let username = 'Theo'
-let message = 'Hi'
-console.log(username += message)    // TheoHi
+let username = 'harry'
+const message = 'hello'
+username += message
+console.log(username)
 
 
 /*
@@ -36,7 +36,7 @@ console.log(username += message)    // TheoHi
 */
 
 const viewCnt = 500
-console.log(`조회수 ${viewCnt}회`)    // 조회수 500회
+console.log(`조회수 ${viewCnt}회`)
 
 
 /*
@@ -50,11 +50,11 @@ console.log(`조회수 ${viewCnt}회`)    // 조회수 500회
 */
 
 let unknown
-console.log(unknown)    // undefined
+console.log(unknown) // undefined
 
 const nullValue = null 
-console.log(nullValue)    // null
-console.log(typeof nullValue)   // object
+console.log(nullValue) // null
+console.log(typeof nullValue) // object
 
 
 /*
@@ -70,7 +70,7 @@ console.log(typeof nullValue)   // object
 
 let isLoggedIn = false
 isLoggedIn = true
-console.log(isLoggedIn)   // true
+console.log(isLoggedIn)
 
 
 /*
@@ -86,6 +86,7 @@ console.log(isLoggedIn)   // true
   - 삼항 연산자의 반환값을 message 변수에 할당 후 출력합니다.
 */
 
-const isSubscribed = false
-const message = isSubscribed ? '구독취소' : '구독중'
-console.log(message)    // 구독중
+const subscribed = false
+const message = subscribed ? '구독취소' : '구독중'
+console.log(message)
+

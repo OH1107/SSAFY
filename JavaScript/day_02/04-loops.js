@@ -7,8 +7,9 @@
 */
 
 let evenNumber = 0
+
 while (evenNumber < 6) {
-  console.log(evenNumber)
+  console.log(evenNumber) // 0, 2, 4
   evenNumber += 2
 }
 
@@ -23,8 +24,9 @@ while (evenNumber < 6) {
 */
 
 for (let oddNumber = 1; oddNumber < 5; oddNumber += 2) {
-  console.log(oddNumber)
+  console.log(oddNumber) // 1, 3
 }
+
 
 /*
   [for... in 연습]
@@ -44,8 +46,9 @@ const bestMovie = {
   genres: ['romance', 'fantasy'],
 }
 
-for (const key in bestMovie) {
+for (let key in bestMovie) {
   console.log(`${key}: ${bestMovie[key]}`)
+  // console.log(bestMovie[key])
 }
 
 
@@ -61,13 +64,11 @@ for (const key in bestMovie) {
 */
 
 const movies = [
-  { title: '어바웃 타임' },
-  { title: '굿 윌 헌팅' },
-  { title: '인턴' },
+  {title: '어바웃 타임'},
+  {title: '굿 윌 헌팅'},
+  {title: '인턴'},
 ]
 
-for (const movie of movies) {
-  for (const key in movie) {
-    console.log(`${key}: ${movie[key]}`)
-  }
+for (let movie of movies) {
+  console.log(`title: ${movie.title}`)
 }

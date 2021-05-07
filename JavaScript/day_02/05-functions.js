@@ -8,11 +8,22 @@
 	- 예시) isValid('abcd')  // false
 */
 
-const password = 'abcd'
-function isValid (password) {
-	return password.length >= 8
+// 1
+function isValid (word) {
+	if (word.length >= 8) {
+		return true
+	} else {
+		return false
+	}
 }
-isValid(password)
+
+// 2
+function isValid2 (word) {
+	return word.length >= 8
+}
+
+console.log(isValid('password'))
+console.log(isValid2('password'))
 
 
 /*
@@ -25,19 +36,24 @@ isValid(password)
 	- 예시) join(['010', '1234', '5678'], '-')  // '010-1234-5678'
 */
 
-const join = function (array, separator) {
+const myJoin = function (array, separator) {
 	let result = ''
-	for (let i = 0; i < array.length; i++) {
-		const item = array[i]
-		if (i < array.length-1) {
-			result += item + separator
-		} else {
-			result += item
+
+	for (let idx = 0; idx < array.length; idx++) {
+		// let word = array[idx]
+		const word = array[idx]
+		result += word
+		if (idx < array.length - 1) {
+			result += separator
 		}
 	}
+
 	return result
 }
-join(['010', '1234', '5678'], '-')
+
+console.log(myJoin(['010', '1234', '5678'], '-'))
+
+
 
 
 /*
@@ -52,9 +68,11 @@ join(['010', '1234', '5678'], '-')
 */
 
 const makeOrder = function (menu, size = 'regular') {
-	return { menu: menu, size: size}
+	return { menu: menu, size: size }
 }
-makeOrder('mocha')
+
+console.log(makeOrder('mocha'))
+
 
 
 /*
@@ -70,5 +88,22 @@ makeOrder('mocha')
 
 */
 
-const celsiusToFahrenheit = celsius => celsius * 9/5 + 32
+function celsiusToFahrenheit (celsius) {
+	// const fahrenheit = celsius * 9/5 + 32
+	return celsius * 9/5 + 32
+}
 
+// 1단계
+const celsiusToFahrenheit = (celsius) => {
+	const fahrenheit = celsius * 9/5 + 32
+	return fahrenheit
+}
+
+// 2단계
+const celsiusToFahrenheit = celsius => {
+	const fahrenheit = celsius * 9/5 + 32
+	return fahrenheit
+}
+
+// 3단계
+const celsiusToFahrenheit = celsius => celsius * 9/5 + 32

@@ -8,14 +8,15 @@
 */
 
 const username = 'admin'
-
 if (username === 'admin') {
   console.log('관리자님 환영합니다.')
-} else if (username === 'manger') {
+} else if (username === 'manager') {
   console.log('매니저님 환영합니다.')
 } else {
   console.log(`${username}님 환영합니다.`)
 }
+
+
 
 
 /*
@@ -35,19 +36,19 @@ const numTwo = 100
 const operator = '+'
 
 switch (operator) {
-  case ('+'): {
+  case '+': {
     console.log(numOne + numTwo)
     break
   }
-  case ('-'): {
+  case '-': {
     console.log(numOne - numTwo)
     break
   }
-  case ('*'): {
+  case '*': {
     console.log(numOne * numTwo)
     break
   }
-  case ('/'): {
+  case '/': {
     console.log(numOne / numTwo)
     break
   }
@@ -55,3 +56,5 @@ switch (operator) {
     console.log('유효하지 않은 연산자입니다.')
   }
 }
+
+

@@ -103,8 +103,8 @@
     // 테두리 설정
     const mainQuestionDivList = document.querySelectorAll('section div')
     // console.log(mainQuestionDivList)
-    
-    mainQuestionDivList.forEach( function(div) {
+
+    mainQuestionDivList.forEach( function (div) {
       div.setAttribute('class', 'box-item')
     })
 
@@ -115,7 +115,7 @@
     myButton.setAttribute('value', '제출')
 
     // 이미지 사이즈
-    const myImage = document.querySelector('nav img')
+    const myImage = document.querySelector('nav > a > img')
     // console.log(myImage)
     myImage.width = '600'
 
@@ -124,15 +124,15 @@
     myFooter.innerText = 'Google 설문지를 통해 비밀번호를 제출하지 마시오.'
     // console.log(myFooter)
 
-    // const myBody = document.querySelector('body')
-    mainBackground.appendChild(myFooter)
+    const myBody = document.querySelector('body')
+    myBody.appendChild(myFooter)
 
     myFooter.setAttribute('class', 'box-container')
 
     // input 요소 스타일링
     const myInput = document.querySelector('#name')
     myInput.style.marginTop = '50px'
-    
+
   </script>
 </body>
 </html>

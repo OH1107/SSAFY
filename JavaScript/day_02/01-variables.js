@@ -7,8 +7,7 @@
 */
 
 let ssafy = '제주도'
-ssafy = '대전'
-
+ssafy = '서울'
 
 /*
   [const 키워드 연습]
@@ -20,7 +19,7 @@ ssafy = '대전'
 */
 
 const phone = 'Galaxy S2'
-phone = 'iPhone XR'  // Uncaught SyntaxError: Identifier 'phone' has already been declared
+phone = 'Nokia'
 
 
 /*
@@ -33,10 +32,10 @@ let fullName = 'Brendan Eich'
 
 if (fullName === 'Brendan Eich') {
   let fullName = 'Guido Van Rossum'
-  console.log('블록 스코프:', fullName)   // Guido Van Rossum
+  console.log('블록 스코프:', fullName) // Guido Van Rossum
 }
 
-console.log('전역 스코프:', fullName)     // Brendan Eich
+console.log('전역 스코프:', fullName) // Brendan Eich
 
 
 /*
@@ -52,7 +51,7 @@ if (fullName === 'Brendan Eich') {
   const language = 'Python'
 }
 
-console.log(language)   // Uncaught ReferenceError: language is not defined
+console.log(language) // ReferenceError: language is not defined
 
 
 /*
@@ -66,7 +65,7 @@ console.log(language)   // Uncaught ReferenceError: language is not defined
 
 var framework = 'Bootstrap'
 framework = 'Django'
-var framework = 'Vue'   // Vue
+var framework = 'Vue'
 
 
 /*
@@ -78,7 +77,7 @@ var framework = 'Vue'   // Vue
 function f1() {
   var message = 'You are doing great!'
 }
-console.log(message)    // Uncaught ReferenceError: message is not defined
+console.log(message) // ReferenceError: message is not defined
 
 
 /*
@@ -95,7 +94,7 @@ const codeEditor = 'vscode'
 if (codeEditor === 'vscode') {
   var theme = 'dark+'
 }
-console.log(theme)    // dark+
+console.log(theme) // 'dark+'
 
 
 /*
@@ -111,12 +110,12 @@ console.log(theme)    // dark+
 function f2() {
   const stack = 'Last In, First Out'
 }
-console.log(stack)    // Uncaught ReferenceError: message is not defined
+console.log(stack) // ReferenceError: stack is not defined
 
 function f3() {
   let queue = 'First In, First Out'
 }
-console.log(queue)    // Uncaught ReferenceError: message is not defined
+console.log(queue) // ReferenceError: queue is not defined
 
 
 /*
@@ -126,11 +125,11 @@ console.log(queue)    // Uncaught ReferenceError: message is not defined
   그리고 const와 let의 경우와 비교해보세요.
 */
 
-console.log(hoisted)
-var hoisted = 'can you see me?'   // undefined
+console.log(hoisted) // undefined
+var hoisted = 'can you see me?'
 
-console.log(lunch)
-const lunch = '초밥'    // Uncaught ReferenceError: Cannot access 'lunch' before initialization
+console.log(lunch) // ReferenceError: Cannot access 'lunch' before initialization
+const lunch = '초밥'
 
-console.log(dinner)
-let dinner = '스테이크'   // Uncaught ReferenceError: dinner is not defined
+console.log(dinner) // ReferenceError: dinner is not defined
+let dinner = '스테이크'
