@@ -8,10 +8,19 @@
 </head>
 <body>
   <div id="app">
+    <p v-text="message"></p>
+    <!-- 같음 -->
+    <p>{{ message }}</p>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
+    const app = new Vue({
+      el: '#app', 
+      data: {
+        message: 'Hello',
+      }
+    })
   </script>
 </body>
 </html>

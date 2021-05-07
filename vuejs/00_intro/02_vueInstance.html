@@ -9,10 +9,36 @@
 <body>
   <div id="app"></div>
   <div id="app2">
+    <p>{{ message }}</p>
+    <p>{{ greeting() }}</p>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
+    // 1
+    vueIntanceObject = {
+      el: '#app',
+    }
+    const app = new Vue(vueIntanceObject)
+    console.log(app)
+
+    // 2 
+    const app2 = new Vue({
+      el: '#app2',
+      data: {
+        message: 'Hello',
+      },
+      methods: {
+        greeting: function () {
+          const newMessage  = this.message + ' there!'
+          console.log(newMessage)
+          return newMessage
+        }
+      }
+    })
+    console.log(app2)
+
+    app2.greeting()
   </script>
 </body>
 </html>

@@ -28,6 +28,11 @@
             })
         }
       },
+      // Vue 인스턴스가 생성되면
+      // getImg() 함수를 호출해 처음부터 이미지 데이터를 불러옴
+      created: function () { 
+        this.getImg()
+      }
     })
   </script>
 </body>
